@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart House</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li id="lightHouse">Light</li>
+                <li id="waterHouse">Water</li>
+                <li id="alarm" value="Alarm Off">Alarm</li>
+                <li id="door">Door</li>
+            </ul>
+        </nav>
+        <button type="button" id="login">Login</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <label for="inputField">Name:</label>
+                <input type="text" id="inputField">
+                <label for="password">Password:</label>
+                <input type="text" id="password">
+                <button id="submitBtn">Sabmit</button>
+            </div>
+        </div>
+        <div id="enterUser">
+            <input type="text" class="textLogin" value="Login"></input><br>
+            <input type="password" class="password" value="password"></input>
+        </div>
+    </header>
+    <main>
+        <div class="management">
+            <div class="show">
+                <div class="userInHouse"></div>
+                <div class="weather">Weather</div>
+                <div class="data">Data</div>
+                <div class="time">Time</div>
+                <div class="showWindow">
+                    <p class="nameRoom"></p>
+                    <div class="light" data-name="light">Light:
+                        <input type="button" data-name="light" class="btnLight" value="Off"></input>
+                    </div>
+                    <div class="heating" data-name="heating">Floor heating:
+                        <input type="button" data-name="heating" class="btnHeating" value="Off"></input>
+                    </div>
+                    <div data-name="airCondition" class="airCond">Air conditioning:
+                        <input type="button" class="minus" data-name="airCondition" value=" - "></input>
+                        <p class="airCondTemp" data-name="airCond"></p>
+                        <input type="button" class="plus" data-name="airCond" value=" + "></input>
+                    </div>
+                    <div data-name="coffeeMachine" class="coffeeMachine">Coffee machine:
+                        <input type="button" data-name="coffeeMachine" class="btnCoffeeMachine" value="Off"></input>
+                    </div>
+                    <div data-name="water" class="water">Water:
+                        <input type="button" data-name="water" class="btnWater" value="Off"></input>
+                    </div>
+                    <div data-name="tv" class="tv">TV:
+                        <input type="button" data-name="tv" class="btnTv" value="Off"></input>
+                    </div>
+                    <div class="channels">
+                        <input type="button" class="btnNetflix" value="Natflix"></input>
+                        <input type="button" class="btnYouTube" value="YouTube"></input>
+                        <input type="button" class="btnMegogo" value="Megogo"></input>
+                    </div>
+
+                </div>
+            </div>
+            <div class="block">
+                <input type="button" id="kitchen" class="room" value="Kitchen" onclick="showRoom('kitchen')"></input>
+                <input type="button" class="bedroom room" value="Bedroom" onclick="showRoom('bedroom')"></input>
+                <input type="button" class="bathroom room" value="Bathroom" onclick="showRoom('bathroom')"></button>
+                <input type="button" class="office room" value="Office" onclick="showRoom('office')"></button>
+                <input type="button" class="tv_room room" value="TV Room" onclick="showRoom('tv_room')"></button>
+                <input type="button" class="livingroom room" value="Livingroom"
+                    onclick="showRoom('livingroom')"></button>
+                <input type="button" class="terrace room" value="Terrace" onclick="showRoom('terrace')"></button>
+                <input type="button" class="garden room" value="Garden" onclick="showRoom('garden')"></button>
+                <input type="button" class="toilet room" value="Toilet" onclick="showRoom('toilet')"></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li id="home">Home</li>
+            <li>Routins</li>
+            <li>Statistics</li>
+            <li>Profile</li>
+        </ul>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

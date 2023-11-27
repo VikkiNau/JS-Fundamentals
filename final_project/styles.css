@@ -1,0 +1,97 @@
+ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 5px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+}
+#home, #lightHouse, #waterHouse{
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+}
+#alarm, #door {
+    cursor: pointer;
+    background-color: green;
+}
+#enterUser {
+    display: none;
+}
+#login {
+    margin-right: 5px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: black;
+  }
+.show {
+    background-image: url(img/house.jpg);
+    height: 185px;
+    width: 230px;
+    text-align: center;
+}
+
+.btnLight, .light, .btnHeating, .heating, .airCond, .btnCoffeeMachine, .coffeeMachine, .btnWater, .water, .btnTv, .tv, .channels, .btnNetflix, .btnYouTube, .btnMegogo{
+    display: none;
+}
+
+.management {
+    height: 255px;
+    display: flex;
+}
+.block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.room {
+    margin-right: 5px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+}
+.room :hover{
+    cursor: pointer;
+    background-color:cadetblue
+}
+
+.btnLight, .btnHeating, .btnCoffeeMachine, .btnWater, .btnTv,.btnNetflix, .btnYouTube, .btnMegogo{
+    background-color: gray;
+}
+.airCondTemp{
+    border: 1px solid #000;
+    background-color: aliceblue;
+    display: contents;
+}
